@@ -1,0 +1,124 @@
+
+.admin-entidad {
+  width: min(900px, calc(100% - 32px));
+  margin: 40px auto;
+  color: #222;
+}
+
+.admin-entidad > button {
+  padding: 9px 14px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+}
+
+.admin-entidad h1 {
+  margin: 24px 0;
+}
+
+.entidad-form {
+  display: grid;
+  gap: 12px;
+  max-width: 500px;
+  padding: 24px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+}
+
+.entidad-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+
+.entidad-form button {
+  padding: 13px;
+  border: 0;
+  background: #222;
+  color: #fff;
+  cursor: pointer;
+}
+
+.entidad-mensaje {
+  margin: 16px 0;
+}
+
+.entidad-lista {
+  margin-top: 32px;
+}
+
+.entidad-lista h2 {
+  margin-bottom: 16px;
+}
+
+.entidad-lista ul {
+  padding-left: 22px;
+}
+
+.entidad-lista li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+
+.categorias-admin-lista {
+  padding: 0;
+  list-style: none;
+}
+
+.categoria-admin-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.categoria-acciones,
+.categoria-edicion {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.categoria-acciones button,
+.categoria-edicion button {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #222;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.categoria-acciones button:hover,
+.categoria-edicion button:hover {
+  background: #222;
+  color: #fff;
+}
+
+.categoria-acciones .categoria-eliminar {
+  border-color: #c0392b;
+  color: #c0392b;
+}
+
+.categoria-acciones .categoria-eliminar:hover {
+  background: #c0392b;
+  color: #fff;
+}
+
+.categoria-edicion input {
+  min-width: 150px;
+  padding: 9px;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 480px) {
+  .categoria-admin-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

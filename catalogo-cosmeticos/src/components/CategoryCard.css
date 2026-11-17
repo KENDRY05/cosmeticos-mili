@@ -1,0 +1,117 @@
+
+/* ===== TARJETAS DE CATEGORÍAS ===== */
+
+.categoria-card {
+  position: relative;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 25px;
+
+  background: linear-gradient(145deg, #ffffff, #fcf7f9);
+  border: 1px solid #eee4e9;
+  border-radius: 14px;
+
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+
+  box-shadow: 0 4px 14px rgba(72, 40, 52, 0.04);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+.categoria-card:hover {
+  transform: translateY(-5px);
+  background: #ffffff;
+  border-color: #c4e3df;
+
+  box-shadow: 0 10px 24px rgba(44, 100, 95, 0.10);
+}
+
+.categoria-card:focus-visible {
+  outline: 3px solid rgba(44, 143, 145, 0.35);
+  outline-offset: 3px;
+}
+
+.categoria-card h3 {
+  position: relative;
+  margin: 0;
+
+  color: #393039;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+
+  transition: color 0.25s ease;
+}
+
+.categoria-card:hover h3 {
+  color: #287f7c;
+}
+
+/* ===== PANTALLAS PEQUEÑAS ===== */
+
+@media (max-width: 600px) {
+  .categoria-card {
+    min-height: 115px;
+    padding: 18px;
+    border-radius: 11px;
+  }
+
+  .categoria-card h3 {
+    font-size: 13px;
+    letter-spacing: 0.8px;
+  }
+}
+
+/* Respeta la preferencia de movimiento del usuario */
+
+@media (prefers-reduced-motion: reduce) {
+  .categoria-card,
+  .categoria-card h3 {
+    transition: none;
+  }
+
+  .categoria-card:hover {
+    transform: none;
+  }
+}
+
+/* Botón de consulta por WhatsApp */
+.whatsapp-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background-color: #25D366;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #1DA851;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.whatsapp-button:focus-visible {
+  outline: 3px solid #128C7E;
+  outline-offset: 3px;
+}

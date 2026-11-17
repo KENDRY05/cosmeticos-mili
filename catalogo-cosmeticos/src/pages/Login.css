@@ -1,0 +1,124 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f7f9;
+  padding: 20px;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 650px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.login-container > h1 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 25px 0 15px;
+}
+
+.user-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.user-option {
+  text-align: center;
+  padding: 15px 25px 25px;
+}
+
+.admin-option {
+  border-right: 1px solid #dddddd;
+}
+
+.user-icon {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #e8f4f8;
+
+  font-size: 48px;
+}
+
+.user-option h2 {
+  font-size: 17px;
+  margin: 5px 0 5px;
+  font-weight: 700;
+}
+
+.admin-option h2 {
+  color: #3673a5;
+}
+
+.client-option h2 {
+  color: #269b9b;
+}
+
+.user-option p {
+  min-height: 42px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.user-option button {
+  width: 100%;
+  max-width: 220px;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 18px;
+
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.admin-option button {
+  background: #3f82b8;
+}
+
+.client-option button {
+  background: #27a5a5;
+}
+
+.user-option button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.login-footer {
+  padding: 12px;
+  text-align: center;
+  background: #edf2f6;
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .user-options {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-option {
+    border-right: none;
+    border-bottom: 1px solid #dddddd;
+  }
+
+  .user-option {
+    padding: 20px;
+  }
+}
